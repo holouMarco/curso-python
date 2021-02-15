@@ -18,3 +18,23 @@ elif edad > 18:
     print('Como ya eres mayor te puedo dar una buena jarra de cerveza')
 else:
     print('La edad introducida no corresponde a ninguna de este universo, vuelva a intentar')
+    
+# Revisa si edad es un digito
+edad = input('Que edad tienes: ')
+
+# Este if revisa si el input es un digito
+
+if edad.isdigit():
+    edad = int(edad)
+else:
+    print('Para tu conocimiento la edad es un numero no untexto. Ponlo bien anda')
+    edad = int(input('Que edad tienes: '))
+
+if edad < 18:
+    print('Solo puedes beber zumito de naranja')
+elif edad == 18:
+    print('Te puedo servir un chupito de tequila')
+elif edad > 18:
+    print('Como ya eres mayor te puedo dar una buena jarra de cerveza')
+else:
+    print('La edad introducida no corresponde a ninguna de este universo, vuelva a intentar')
