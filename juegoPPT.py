@@ -18,7 +18,7 @@ eleccionJugador = input('Haz tu eleccion: ')
 print('Ordenador:', eleccionOrdenador,'\n')
 
 
-if eleccionOrdenador == 'piedra' and eleccionJugador == 'tijera':
+if eleccionOrdenador == 'piedra' and (eleccionJugador == 'tijera' or eleccionJugador == 'tijeras'):
     print('El ordenador gana')
 
 elif eleccionOrdenador == 'tijera' and eleccionJugador == 'papel':
@@ -33,10 +33,10 @@ elif eleccionOrdenador == 'piedra' and eleccionJugador == 'papel':
 elif eleccionOrdenador == 'tijera' and eleccionJugador == 'piedra':
     print('El jugador gana')
 
-elif eleccionOrdenador == 'papel' and eleccionJugador == 'tijera':
+elif eleccionOrdenador == 'papel' and (eleccionJugador == 'tijera' or eleccionJugador == 'tijeras'):
     print('El jugador gana')
 
-elif eleccionJugador == eleccionOrdenador:
+elif eleccionJugador == eleccionOrdenador or (eleccionJugador == 'tijeras' and eleccionOrdenador == 'tijera'):
     print('Es un empate')
 
 else:
