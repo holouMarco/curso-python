@@ -15,6 +15,9 @@ eleccionOrdenador = choice(opciones)
 
 eleccionJugador = input('Haz tu eleccion: ')
 
+print('Ordenador:', eleccionOrdenador,'\n')
+
+
 if eleccionOrdenador == 'piedra' and eleccionJugador == 'tijera':
     print('El ordenador gana')
 
@@ -33,8 +36,8 @@ elif eleccionOrdenador == 'tijera' and eleccionJugador == 'piedra':
 elif eleccionOrdenador == 'papel' and eleccionJugador == 'tijera':
     print('El jugador gana')
 
-else:
+elif eleccionJugador == eleccionOrdenador:
     print('Es un empate')
 
-print('Ordenador:', eleccionOrdenador)
-print('Jugador:', eleccionJugador)
+else:
+    print('Introduciste un valor erroneo')
