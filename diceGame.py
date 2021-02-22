@@ -13,16 +13,16 @@ import random
 
 # Crea un bloque condicional que compruebe si ha habido empate, victoría o derrota y devuelva el mensaje
 
-def diceRoll(option1, option2):
+def diceRoll(dice1, dice2):
 
-    print(f'Player 1 number is {option1}')
-    print(f'Player 2 number is {option2}')
+    print(f'Player 1 number is {dice1}')
+    print(f'Player 2 number is {dice2}')
 
-    if option1 == option2:
+    if dice1 == dice2:
 
         return 'Player 1 and Player 2 draw'
 
-    elif option1 > option2:
+    elif dice1 > dice2:
 
         return 'Player 1 win'
 
