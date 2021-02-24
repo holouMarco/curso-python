@@ -1,3 +1,4 @@
+import random
 #Ejercicio bucle while
 #Fase 1
 
@@ -12,7 +13,7 @@
 
 #Fase 2
 
-number = 9
+number = random.randint(1, 9)
 counter = 0
 opoLeft = 0
 humanNumber = input('Introduce un numero del 1 al 10, si aciertas ganas.Solo tienes 3 intentos mas.\n')
@@ -40,4 +41,6 @@ while counter < 3:
         humanNumber = input('Intentalo de nuevo en el rango correcto ')
         counter += 1
 
-print('Te has quedado sin intentos.')
+if counter == 3:
+
+    print('Te has quedado sin intentos')
