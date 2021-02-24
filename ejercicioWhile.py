@@ -28,9 +28,13 @@ while counter < 3:
             break
 
         else:
+            
             opoLeft = 3 - counter
-
-            print(f'Te quedan {opoLeft} intentos')
+            if opoLeft > 1:
+                print(f'Te quedan {opoLeft} intentos.')
+            
+            else:
+                print(f'Te queda 1 intento.')
 
             humanNumber = input('Intentalo de nuevo ')
 
@@ -44,3 +48,4 @@ while counter < 3:
 if counter == 3:
 
     print('Te has quedado sin intentos')
+    print(f'El numero correcto era: {number}')
